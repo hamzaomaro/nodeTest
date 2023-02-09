@@ -1,20 +1,25 @@
 {
-  "name": "nodeTest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "app-service-hello-world",
+  "description": "Simple Hello World Node.js sample for Azure App Service",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Microsoft",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+      "start": "node index.js",
+      "lint": "eslint",
+      "format": "prettier --single-quote --write *.js"    
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hamzaomaro/nodeTest.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hamzaomaro/nodeTest/issues"
-  },
-  "homepage": "https://github.com/hamzaomaro/nodeTest#readme"
+  "devDependencies": {
+      "eslint": "^7.5.0",
+      "prettier": "^2.0.5"
+    },
+  "dependencies": {
+      "body-parser": "^1.19.0",
+      "cors": "^2.8.5",
+      "express": "^4.17.1"
+    },
+    "engines": {
+      "node": ">=10"
+    }
 }
